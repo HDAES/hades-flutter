@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class IndexPage extends StatelessWidget {
@@ -14,6 +15,7 @@ class IndexPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
+            Text('文本文本', style: TextStyle(fontSize: 32.sp)),
             ElevatedButton(
                 onPressed: () => context.go('/page1'),
                 child: const Text('跳转page1')),
