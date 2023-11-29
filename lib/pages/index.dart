@@ -15,12 +15,12 @@ class IndexPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text('文本文本', style: TextStyle(fontSize: 32.sp)),
+            Text('Text', style: TextStyle(fontSize: 32.sp)),
             ElevatedButton(
                 onPressed: () => context.go('/page1'),
                 child: const Text('跳转page1')),
-            ElevatedButton(
-                onPressed: () => context.go('/detail'), child: const Text('详情'))
+            ElevatedButton(onPressed: () {}, child: const Text('详情')),
+            ElevatedButton(onPressed: () {}, child: const Text('内容'))
           ],
         ),
       ),
